@@ -1,0 +1,89 @@
+:root{
+    --square-dimension: 560px;
+}
+
+html{
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.container{
+    width: var(--square-dimension);
+    height: var(--square-dimension);
+    border: 10px double black;
+    border-radius: 1%;
+    display: grid;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container div{
+    border: 1px solid black;
+}
+
+
+header{
+    color: white;
+    margin-top: 40px;
+    font-size: 55px;
+    text-align: center;
+}
+
+.change{
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--square-dimension)/1.2);
+    margin: 0 auto;
+    margin-top: 72vh;
+}
+
+.manipulate{
+    margin-right: 6.25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reset{
+    width: calc(var(--square-dimension)/4.5);
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 2% 2% 2% 2%;
+    border: 3px solid rgba(0, 0, 0, 0.911);
+    border-radius: 13%;
+    border-style: groove;
+    background-color:red;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#slider-label{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#color-label{
+    color:white;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.rainbow{
+    background-image: url("images/rainbow_bg.jpg");
+    background-size: cover;
+    /*difference*/
+    color:rgba(255, 255, 255, 0.637);
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 2% 4% 2% 4%;
+    border: 2px solid black;
+    border-radius: 14%;
+}
